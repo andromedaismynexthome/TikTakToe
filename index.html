@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tik-TAK-Toe</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="scripts/index.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="container" class="container">
+            <div class="grid">
+                <div class="rows">
+                    <div onclick=HandleClick(this) id="0" class="col"></div>
+                    <div onclick=HandleClick(this) id="3" class="col"></div>
+                    <div onclick=HandleClick(this) id="6" class="col"></div>
+                </div>
+                <div class="rows">
+                    <div onclick=HandleClick(this) id="1" class="col"></div>
+                    <div onclick=HandleClick(this) id="4" class="col"></div>
+                    <div onclick=HandleClick(this) id="7"  class="col"></div>
+                </div>
+                <div class="rows">
+                    <div onclick=HandleClick(this) id="2" class="col"></div>
+                    <div onclick=HandleClick(this) id="5" class="col"></div>
+                    <div onclick=HandleClick(this) id="8" class="col"></div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>
