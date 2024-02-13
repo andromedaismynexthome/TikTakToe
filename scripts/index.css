@@ -1,8 +1,9 @@
 .container{
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    height:650px;
+    height:600px;
     width: 100%;
     background-color: #000;
 }
@@ -32,4 +33,17 @@
     background-color: beige;
     font-size: 80px;
     
+}
+.winnerbox{
+  height: 50px;
+  width: auto;
+  background-color: #000;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#winner-box{
+  color: whitesmoke;
 }

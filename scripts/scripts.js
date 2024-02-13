@@ -1,12 +1,9 @@
-const con = document.getElementById('conatiner');
+const winner = document.getElementById('winner-box');
 const firstplayer = 'X';
 let currentplayer = firstplayer;
 const col = document.getElementById('col');
 let array = Array(9).fill(null);
-const winner = (c) => {
-    con.innerHTML(`<div class="winner"><h2>${c}</h2></di>`);
-}
-function check(fn){ 
+function check(){ 
     if(
         (array[0]!==null && array[0]==array[1] && array[1]==array[2]) ||
         (array[3]!==null && array[3]==array[4] && array[4]==array[5]) ||
@@ -17,11 +14,13 @@ function check(fn){
         (array[0]!==null && array[0]==array[4] && array[4]==array[8]) ||
         (array[2]!==null && array[2]==array[4] && array[4]==array[6]) 
     ){
-        return fn(currentplayer);
+        console.log(currentplayer)
+        
+        winner.innerText = `Winner is :- ${currentplayer}`
     }
 
     if(!array.some(el => el===null)){
-        return;
+        winner.innerText = "Draw"
     }
 }
 
@@ -32,6 +31,6 @@ function HandleClick(el){
     }
     array[id] = currentplayer
     el.innerText = currentplayer;
-    check(winner(currentplayer));
+    check();
     currentplayer = currentplayer === firstplayer ? 'O' : firstplayer;
 }
