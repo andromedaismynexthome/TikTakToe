@@ -17,7 +17,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div id="container" class="container">
-            <div class="grid">
+            <div id="grid" class="grid">
                 <div class="rows">
                     <div onclick=HandleClick(this) id="0" class="col"></div>
                     <div onclick=HandleClick(this) id="3" class="col"></div>
@@ -34,8 +34,13 @@
                     <div onclick=HandleClick(this) id="8" class="col"></div>
                 </div>
             </div>
+            <br>
+            <button onclick = "window.location.reload();">Reset</button> 
         </div>
-        <div class="winnerbox"><h1 id="winner-box"></h1></div>
+        <div class="winnerbox">
+        <h1 id="winner-box"></h1>
+        
+        </div>
         <script src="scripts/scripts.js"></script>
     </body>
 </html>

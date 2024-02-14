@@ -1,4 +1,5 @@
 const winner = document.getElementById('winner-box');
+const grid = document.getElementById('grid');
 const firstplayer = 'X';
 let currentplayer = firstplayer;
 const col = document.getElementById('col');
@@ -14,9 +15,9 @@ function check(){
         (array[0]!==null && array[0]==array[4] && array[4]==array[8]) ||
         (array[2]!==null && array[2]==array[4] && array[4]==array[6]) 
     ){
-        console.log(currentplayer)
         
         winner.innerText = `Winner is :- ${currentplayer}`
+        grid.style.pointerEvents = 'none';
     }
 
     if(!array.some(el => el===null)){
